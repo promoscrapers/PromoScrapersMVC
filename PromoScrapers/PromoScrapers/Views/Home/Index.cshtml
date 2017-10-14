@@ -1,31 +1,292 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<div class="col-sm-12">
+    <div class="title"><span></span></div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    <!-- Product Sorting Bar -->
+    @*<div class="product-sorting-bar">
+        <div>
+            Sort By
+            <select name="sortby" class="selectpicker" data-width="180px">
+                <option value="recomended">Recomended</option>
+                <option value="low">Low Price &raquo; High Price</option>
+                <option value="hight">High Price &raquo; High Price</option>
+            </select>
+        </div>
+        <div>
+            Show
+            <select name="show" class="selectpicker" data-width="60px">
+                <option value="8">8</option>
+                <option value="12">12</option>
+                <option value="16">16</option>
+            </select> per page
+        </div>
+    </div>*@
+    <!-- End Product Sorting Bar -->
+
+    <div class="col-xs-6 col-md-4 col-lg-3 box-product-outer">
+        <div class="box-product">
+            <div class="img-wrapper">
+                <a href="detail.html">
+                    <img alt="Product" src="images/demo/p1-1.jpg">
+                </a>
+                <div class="tags">
+                    <span class="label-tags"><span class="label label-default arrowed">Featured</span></span>
+                </div>
+                <div class="tags tags-left">
+                    <span class="label-tags"><span class="label label-danger arrowed-right">Sale</span></span>
+                </div>
+                <div class="option">
+                    <a href="#" data-toggle="tooltip" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Add to Compare"><i class="fa fa-align-left"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Add to Wishlist" class="wishlist"><i class="fa fa-heart"></i></a>
+                </div>
+            </div>
+            <h6><a href="detail.html">WranglerGrey Printed Slim Fit Round Neck T-Shirt</a></h6>
+            <div class="price">
+                <div>$13.50 <span class="label-tags"><span class="label label-default">-10%</span></span></div>
+                <span class="price-old">$15.00</span>
+            </div>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <a href="#">(5 reviews)</a>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <div class="col-xs-6 col-md-4 col-lg-3 box-product-outer">
+        <div class="box-product">
+            <div class="img-wrapper">
+                <a href="detail.html">
+                    <img alt="Product" src="images/demo/p2-1.jpg">
+                </a>
+                <div class="tags tags-left">
+                    <span class="label-tags"><span class="label label-success arrowed-right">New Arrivals</span></span>
+                </div>
+                <div class="option">
+                    <a href="#" data-toggle="tooltip" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Add to Compare"><i class="fa fa-align-left"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Add to Wishlist" class="wishlist"><i class="fa fa-heart"></i></a>
+                </div>
+            </div>
+            <h6><a href="detail.html">CelioKhaki Printed Round Neck T-Shirt</a></h6>
+            <div class="price">
+                <div>$13.50 <span class="label-tags"><span class="label label-primary">-10%</span></span></div>
+                <span class="price-old">$15.00</span>
+            </div>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <a href="#">(5 reviews)</a>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <div class="clearfix visible-xs visible-sm"></div>
+    <div class="col-xs-6 col-md-4 col-lg-3 box-product-outer">
+        <div class="box-product">
+            <div class="img-wrapper">
+                <a href="detail.html">
+                    <img alt="Product" src="images/demo/p3-1.jpg">
+                </a>
+                <div class="tags">
+                    <span class="label-tags"><span class="label label-danger arrowed">Sale</span></span>
+                    <span class="label-tags"><span class="label label-info arrowed">Collection</span></span>
+                </div>
+                <div class="option">
+                    <a href="#" data-toggle="tooltip" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Add to Compare"><i class="fa fa-align-left"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Add to Wishlist" class="wishlist"><i class="fa fa-heart"></i></a>
+                </div>
+            </div>
+            <h6><a href="detail.html">CelioOff White Printed Round Neck T-Shirt</a></h6>
+            <div class="price">
+                <div>$13.50</div>
+            </div>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <a href="#">(5 reviews)</a>
+            </div>
+        </div>
     </div>
+    <div class="col-xs-6 col-md-4 col-lg-3 hidden-md box-product-outer">
+        <div class="box-product">
+            <div class="img-wrapper">
+                <a href="detail.html">
+                    <img alt="Product" src="images/demo/p4-1.jpg">
+                </a>
+                <div class="tags">
+                    <span class="label-tags"><span class="label label-primary arrowed">Popular</span></span>
+                </div>
+                <div class="option">
+                    <a href="#" data-toggle="tooltip" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Add to Compare"><i class="fa fa-align-left"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Add to Wishlist" class="wishlist"><i class="fa fa-heart"></i></a>
+                </div>
+            </div>
+            <h6><a href="detail.html">Levi'sNavy Blue Printed Round Neck T-Shirt</a></h6>
+            <div class="price">
+                <div>$13.50</div>
+            </div>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <a href="#">(5 reviews)</a>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-xs-6 col-md-4 col-lg-3 box-product-outer">
+        <div class="box-product">
+            <div class="img-wrapper">
+                <a href="detail.html">
+                    <img alt="Product" src="images/demo/p5-1.jpg">
+                </a>
+                <div class="tags tags-left">
+                    <span class="label-tags"><span class="label label-primary arrowed-right">Pupolar</span></span>
+                </div>
+                <div class="option">
+                    <a href="#" data-toggle="tooltip" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Add to Compare"><i class="fa fa-align-left"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Add to Wishlist" class="wishlist"><i class="fa fa-heart"></i></a>
+                </div>
+            </div>
+            <h6><a href="detail.html">IncultAcid Wash Raglan Crew Neck T-Shirt</a></h6>
+            <div class="price">
+                <div>$13.50 <span class="label-tags"><span class="label label-danger arrowed">-10%</span></span></div>
+                <span class="price-old">$15.00</span>
+            </div>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <a href="#">(5 reviews)</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6 col-md-4 col-lg-3 box-product-outer">
+        <div class="box-product">
+            <div class="img-wrapper">
+                <a href="detail.html">
+                    <img alt="Product" src="images/demo/p6-1.jpg">
+                </a>
+                <div class="tags">
+                    <span class="label-tags"><span class="label label-danger arrowed">Hot Item</span></span>
+                </div>
+                <div class="option">
+                    <a href="#" data-toggle="tooltip" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Add to Compare"><i class="fa fa-align-left"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Add to Wishlist" class="wishlist"><i class="fa fa-heart"></i></a>
+                </div>
+            </div>
+            <h6><a href="detail.html">Avoir EnvieOlive Printed Round Neck T-Shirt</a></h6>
+            <div class="price">
+                <div>$13.50 <span class="label-tags"><span class="label label-success arrowed">-10%</span></span></div>
+                <span class="price-old">$15.00</span>
+            </div>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <a href="#">(5 reviews)</a>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix visible-xs visible-sm"></div>
+    <div class="col-xs-6 col-md-4 col-lg-3 box-product-outer">
+        <div class="box-product">
+            <div class="img-wrapper">
+                <a href="detail.html">
+                    <img alt="Product" src="images/demo/p7-1.jpg">
+                </a>
+                <div class="tags">
+                    <span class="label-tags"><span class="label label-default arrowed">Hot Item</span></span>
+                </div>
+                <div class="option">
+                    <a href="#" data-toggle="tooltip" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Add to Compare"><i class="fa fa-align-left"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Add to Wishlist" class="wishlist"><i class="fa fa-heart"></i></a>
+                </div>
+            </div>
+            <h6><a href="detail.html">ElaboradoBrown Printed Round Neck T-Shirt</a></h6>
+            <div class="price">
+                <div>$13.50 <span class="label-tags"><span class="label label-primary arrowed">-10%</span></span></div>
+                <span class="price-old">$15.00</span>
+            </div>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <a href="#">(5 reviews)</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6 col-md-4 col-lg-3 hidden-md box-product-outer">
+        <div class="box-product">
+            <div class="img-wrapper">
+                <a href="detail.html">
+                    <img alt="Product" src="images/demo/polo1.jpg">
+                </a>
+                <div class="tags">
+                    <span class="label-tags"><span class="label label-success arrowed">New Arrivals</span></span>
+                </div>
+                <div class="option">
+                    <a href="#" data-toggle="tooltip" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Add to Compare"><i class="fa fa-align-left"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Add to Wishlist" class="wishlist"><i class="fa fa-heart"></i></a>
+                </div>
+            </div>
+            <h6><a href="detail.html">IncultGeo Print Polo T-Shirt</a></h6>
+            <div class="price">
+                <div>$13.50 <span class="label-tags"><span class="label label-default arrowed">-10%</span></span></div>
+                <span class="price-old">$15.00</span>
+            </div>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <a href="#">(5 reviews)</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="col-xs-12 text-center">
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                <li class="disabled"><span>&laquo;</span></li>
+                <li class="disabled"><span>&lsaquo;</span></li>
+                <li class="active"><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">&rsaquo;</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End Pagination -->
+
 </div>
