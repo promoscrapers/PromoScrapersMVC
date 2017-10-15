@@ -1,0 +1,2 @@
+D:\Developement\OKta Login\okta-music-store-master\OktaProviders\obj\Debug\OktaProviders.csproj.App.config
+D:\Developement\OKta Login\okta-music-store-master\OktaProviders\obj\Debug\OktaProviders.csprojResolveAssemblyReference.cache

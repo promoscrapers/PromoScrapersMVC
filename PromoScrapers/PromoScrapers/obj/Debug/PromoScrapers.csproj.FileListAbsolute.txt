@@ -35,6 +35,5 @@ D:\MVCProjects\Git Hub\PromoScrapers\PromoScrapers\bin\System.Web.WebPages.Deplo
 D:\MVCProjects\Git Hub\PromoScrapers\PromoScrapers\bin\System.Web.WebPages.Razor.xml
 D:\MVCProjects\Git Hub\PromoScrapers\PromoScrapers\bin\Antlr3.Runtime.pdb
 D:\MVCProjects\Git Hub\PromoScrapers\PromoScrapers\bin\Newtonsoft.Json.xml
-D:\MVCProjects\Git Hub\PromoScrapers\PromoScrapers\obj\Debug\PromoScrapers.csprojResolveAssemblyReference.cache
 D:\MVCProjects\Git Hub\PromoScrapers\PromoScrapers\obj\Debug\PromoScrapers.dll
 D:\MVCProjects\Git Hub\PromoScrapers\PromoScrapers\obj\Debug\PromoScrapers.pdb

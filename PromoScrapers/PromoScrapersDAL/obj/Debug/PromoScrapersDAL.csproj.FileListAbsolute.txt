@@ -1,5 +1,4 @@
 D:\MVCProjects\Git Hub\PromoScrapers\PromoScrapersDAL\bin\Debug\PromoScrapersDAL.dll
 D:\MVCProjects\Git Hub\PromoScrapers\PromoScrapersDAL\bin\Debug\PromoScrapersDAL.pdb
-D:\MVCProjects\Git Hub\PromoScrapers\PromoScrapersDAL\obj\Debug\PromoScrapersDAL.csprojResolveAssemblyReference.cache
 D:\MVCProjects\Git Hub\PromoScrapers\PromoScrapersDAL\obj\Debug\PromoScrapersDAL.dll
 D:\MVCProjects\Git Hub\PromoScrapers\PromoScrapersDAL\obj\Debug\PromoScrapersDAL.pdb
